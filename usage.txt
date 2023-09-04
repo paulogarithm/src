@@ -1,0 +1,73 @@
+USAGE: src [options...] command [in]? [args...]
+
+DESCRIPTION:
+    src, an easy way to manage your source
+    code folders and binaries!
+    
+        How does it work ?
+
+         1) Add the source code folder
+       1.5) Build your code remotely
+            (if needed)
+         2) Link your binary file
+         3) Done! you can use your
+            binary everywhere!
+
+COMMANDS:
+
+    install [source]
+        Install a prebuilt package from the
+        library. It will do everything for
+        you don't worry.
+        'src install luau'
+
+    uninstall [source]
+        Uninstall a package from your computer.
+        'src uninstall luau'
+
+    add [folders...]
+        Add a folder to make it a source dir.
+        It's like loaded in the source, and 
+        that's from where you can create links
+        for your binaries.
+
+    help
+        Displays help, commands and basically
+        what you are seeing right now.
+
+    git [user/repository]
+        Add a source code from a github
+        repository. You only need to specify
+        the user and the repository name.
+        For example, to install the src tool:
+        'src git paulogarithm/src'
+
+    link [source]
+        Link an executable source code file
+        to make it an executable binary you
+        can access from anywhere in your
+        computer!
+        It takes the source code folder as
+        parametter, then, we will ask you
+        questions...
+        'src link luau'
+
+    rmlink [links...]
+        Removes a link you created
+
+    rm [sources...]
+        Removes a source code folder and
+        the link(s) from it.
+
+    do in [source] (commands+...)?
+        Executes a linux command in the
+        source code folder.
+        'src do in luau make + cmake+ls'
+
+    see (in [source...])?
+        Allows you to see the links and the
+        source code folders. You can also
+        do 'src see in ...' to see only
+        what's inside a source code fodler
+        'src see in luau'
+
