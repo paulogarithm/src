@@ -76,7 +76,7 @@ def execute_srcmak(file: str, packageName: str, allowSudo = True, secured = Fals
     with open(file, 'r') as f:
         lines = f.readlines()
         readRes = f.read()
-        print(lines, readRes)
+        # print(lines, readRes)
         assert not ("sudo" in readRes and not allowSudo
                     ), "Sudo is not allowed in some src.mak, you need to use a flag\nHint: Use --sudoer to execute the src.mak anyway"
         
